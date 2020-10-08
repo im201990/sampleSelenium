@@ -1,6 +1,6 @@
 package utils;/*
  *
- * created by himanshu on 08/10/20
+ * created by himanshu on 09/10/20
  *
  */
 
@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.IOException;
 
 public class DriverUtils {
+
     public static WebDriver driver;
 
     public static WebDriver getBrowserInstance(String browser) throws IOException {
@@ -42,4 +43,5 @@ public class DriverUtils {
         }
         return driver;
     }
+
 }

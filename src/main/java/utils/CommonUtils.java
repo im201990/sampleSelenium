@@ -17,10 +17,10 @@ public class CommonUtils {
     public static String googleNewsUrl;
 
     public static void implicitWait(WebDriver driver, WebElement element, int duration) {
-        WebDriverWait wait = new WebDriverWait(driver, duration);
+        WebDriverWait wait = new WebDriverWait(driver,duration);
         wait.until(ExpectedConditions.visibilityOf(element));
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
     }
 
     public static void launchGoogleNewsPage(WebDriver driver) throws IOException {
